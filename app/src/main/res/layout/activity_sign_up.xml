@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34495e"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="hideKeyboard"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sign_up" />
+
+        <EditText
+            android:id="@+id/sign_up_layout_edtEmail"
+            android:background="#AAA789"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:drawableRight="@drawable/ic_email_black_24dp"
+            android:hint="Enter  your email address"
+            android:textColorHint="#ffff" />
+
+        <EditText
+            android:id="@+id/sign_up_layout_edtUsername"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:background="#AAA789"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_person_black_24dp"
+            android:hint="Enter  your username"
+
+            android:textColorHint="#ffff" />
+
+        <EditText
+            android:id="@+id/sign_up_layout_edtPassword"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:background="#AAA789"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/ic_vpn_key_black_24dp"
+            android:hint="Enter  your password"
+            android:textColorHint="#ffff" />
+
+        <EditText
+            android:id="@+id/sign_up_layout_edtCFPassword"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:background="#AAA789"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/ic_spellcheck_black_24dp"
+            android:hint="Confirm your password"
+            android:textColorHint="#ffff" />
+
+        <Button
+            android:id="@+id/sign_up_layout_btnSignUp"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2784B"
+            android:textColor="#00552A"
+            android:text="Sign Up" />
+        <Button
+            android:id="@+id/sign_up_layout_btnLogin"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BE90D4"
+            android:text="Log in" />
+
+
+    </LinearLayout>
+
+</ScrollView>

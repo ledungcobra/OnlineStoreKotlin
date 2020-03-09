@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fragmentContainer"
+    android:layout_height="wrap_content"
+    android:background="#B2FF59">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".AmountFragment">
+
+    <EditText
+        android:id="@+id/edtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount of this product ..."
+        android:textColor="#ff0000"
+        android:inputType="number"
+
+
+        />
+    <ImageView
+        android:id="@+id/addAmountToCart"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/add_to_cart"
+        android:layout_gravity="center_horizontal"
+       />
+
+
+
+
+</LinearLayout>
+</FrameLayout>

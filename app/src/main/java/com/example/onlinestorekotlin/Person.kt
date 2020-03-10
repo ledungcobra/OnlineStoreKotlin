@@ -5,7 +5,7 @@ class Person {
     companion object{
 
         var email = ""
-        var password = ""
+        var addToCardProductId:Int?=null
 
 
     }

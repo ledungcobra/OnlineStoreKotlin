@@ -41,12 +41,11 @@ class MainActivity : AppCompatActivity() {
             val requestQ = Volley.newRequestQueue(this)
             val stringRequest = StringRequest(Request.Method.GET, stringURL, {
 
-                alertBuilder.setMessage(it.toString())
-                alertBuilder.create().show()
+
                 if(it.toString().equals("Login successfully")){
 
                     Person.email = activity_main_edtLoginEmail.text.toString()
-                    Person.password = activity_main_edtLoginPassword.text.toString()
+
                     finish()
                     startActivity(Intent(this@MainActivity,HomeScreen::class.java))
 

@@ -53,7 +53,6 @@ class SignUpActivity : AppCompatActivity() {
                     if(response.toString().equals("Sign Up successfully")){
 
                         Person.email = sign_up_layout_edtEmail.text.toString()
-                        Person.password = sign_up_layout_edtPassword.text.toString()
 
                         finish()
                         startActivity(Intent(this@SignUpActivity,HomeScreen::class.java))
